@@ -9,6 +9,39 @@
   </head>
   <body>
     <div class="container">
+      <nav class="navbar" id="navbar">
+        <div class="navbar-container">
+          <a href="#" class="navbar-logo">GM</a>
+          <button class="navbar-toggle" id="navbar-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <ul class="navbar-menu" id="navbar-menu">
+            <li><a href="#experience" class="navbar-link">Expérience</a></li>
+            <li><a href="#formation" class="navbar-link">Formation</a></li>
+            <li><a href="#competences" class="navbar-link">Compétences</a></li>
+            <li><a href="#projets" class="navbar-link">Projets</a></li>
+            <li><a href="#langues" class="navbar-link">Langues</a></li>
+            <li>
+              <a
+                href="mailto:moqim.ghizlan@hotmail.com"
+                class="navbar-link navbar-cta"
+                >Contact</a
+              >
+            </li>
+            <li>
+              <button
+                class="theme-toggle"
+                id="theme-toggle"
+                aria-label="Toggle theme"
+              >
+                <span class="theme-icon" id="theme-icon">🌙</span>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </nav>
       <header>
         <img
           src="./src/images/img.png"
@@ -24,13 +57,20 @@
           efficaces et évolutives.
         </p>
         <div class="contact-icons">
-          <a href="mailto:moqim.ghizlan@hotmail.com">Email</a>
-          <a href="tel:+33603883312">+33 6 03 88 33 12</a>
+          <a href="mailto:moqim.ghizlan@hotmail.com"
+            >📧 moqim.ghizlan@hotmail.com</a
+          >
+          <a href="tel:+33603883312">📱 +33 6 03 88 33 12</a>
           <a href="https://linkedin.com/in/moqim-ghizlan" target="_blank"
             >LinkedIn</a
           >
-          <a href="https://github.com/moqim-ghizlan" target="_blank">GitHub</a>
-          <a href="https://gitlab.com/moqim.ghizlan" target="_blank">GitLab</a>
+          <a href="https://github.com/moqim-ghizlan" target="_blank"
+            >💻 GitHub</a
+          >
+          <a href="https://gitlab.com/moqim.ghizlan" target="_blank"
+            >💻 GitLab</a
+          >
+          <a href="" download="./cv.pdf" name="cv.pdf" target="_blank">📑 CV</a>
         </div>
       </header>
 
@@ -200,6 +240,9 @@
         <section id="projets">
           <h2>Projets Réalisés</h2>
           <div class="projects-slider-container">
+            <h4 class="projects-slider-title">
+              26 projets réalisés sur GitLab !
+            </h4>
             <div class="project-grid">
               <div class="project-category">
                 <h3>Intelligent Document Retrieval System</h3>
@@ -212,7 +255,7 @@
                 </div>
                 <div class="project-category-link">
                   <a
-                    href="https://github.com/Abderrahmane-Ali/Intelligent-Document-Retrieval-System"
+                    href="https://github.com/moqim-ghizlan/Graphes-Intelligent-Document-Retrieval-System"
                     target="_blank"
                     >GitHub</a
                   >
@@ -220,13 +263,20 @@
               </div>
 
               <div class="project-category">
-                <h3>Intelligent Document Retrieval System</h3>
+                <h3>XAI Projects Interpretability</h3>
                 <div class="project-category-description">
-                  This project aims to develop an advanced document retrieval
-                  system that integrates both traditional text-based search
-                  methods and graph-based approaches. The objective is to
-                  explore how incorporating document relationships within a
-                  graph structure can enhance search relevance and ranking.
+                  Projet sur l'interprétation des modèles de Machine Learning,
+                  explorant des méthodes telles que SHAP, les contre-factuels,
+                  Grad-CAM, LRP, LLM (BERT) et l'explicabilité des GNN. Chaque
+                  sous-projet fournit des insights précieux dans des domaines
+                  spécifiques de l'analyse de données et des modèles d'IA.
+                </div>
+                <div class="project-category-link">
+                  <a
+                    href="https://github.com/moqim-ghizlan/XAI-Project-Interpretability?tab=readme-ov-file#xai-projects-interpretability"
+                    target="_blank"
+                    >GitHub</a
+                  >
                 </div>
               </div>
 
@@ -242,6 +292,13 @@
                   outils essentiels pour manipuler et analyser des données
                   temporelles dans des domaines variés.
                 </div>
+                <div class="project-category-link">
+                  <a
+                    href="https://github.com/moqim-ghizlan/Temporal-Data-Analysis---Etude-des-Series-Temporelles"
+                    target="_blank"
+                    >GitHub</a
+                  >
+                </div>
               </div>
 
               <div class="project-category">
@@ -253,7 +310,15 @@
                   parallèle, en utilisant le multi-processing pour exploiter
                   plusieurs cœurs CPU.
                 </div>
+                <div class="project-category-link">
+                  <a
+                    href="https://github.com/moqim-ghizlan/Big-Data-Management-avec-MapReduce"
+                    target="_blank"
+                    >GitHub</a
+                  >
+                </div>
               </div>
+
               <div class="project-category">
                 <h3>Big Data Management avec MongoDB</h3>
                 <div class="project-category-description">
@@ -263,7 +328,15 @@
                   l'agrégation, les projections, les jointures, et le tri pour
                   explorer et analyser des jeux de données volumineux.
                 </div>
+                <div class="project-category-link">
+                  <a
+                    href="https://github.com/moqim-ghizlan/Big-Data-Management-avec-MongoDB"
+                    target="_blank"
+                    >GitHub</a
+                  >
+                </div>
               </div>
+
               <div class="project-category">
                 <h3>
                   Optimisation - Implémentation de Lasso avec Descente de
@@ -277,6 +350,406 @@
                   résultats. Ce projet est idéal pour comprendre les concepts
                   fondamentaux des méthodes d'optimisation et leur application
                   en apprentissage machine.
+                </div>
+                <div class="project-category-link">
+                  <a
+                    href="https://github.com/moqim-ghizlan/Optimisation---Implementation-de-Lasso-avec-Descente-de-Gradient-Stochastique"
+                    target="_blank"
+                    >GitHub</a
+                  >
+                </div>
+              </div>
+
+              <div class="project-category">
+                <h3>
+                  NLP Project - Analyse et Applications en Traitement
+                  Automatique du Langage
+                </h3>
+                <div class="project-category-description">
+                  Ce projet explore des concepts et applications du traitement
+                  automatique du langage (NLP) en utilisant des ensembles de
+                  données spécifiques. Il inclut un notebook Jupyter documentant
+                  les analyses et les résultats, ainsi que des scripts Python
+                  pour l'implémentation. Le projet met l'accent sur des tâches
+                  fondamentales en NLP avec des visualisations et des insights
+                  pratiques.
+                </div>
+                <div class="project-category-link">
+                  <a
+                    href="https://github.com/moqim-ghizlan/NLP-Project---Analyse-et-Applications-en-Traitement-Automatique-du-Langage"
+                    target="_blank"
+                    >GitHub</a
+                  >
+                </div>
+              </div>
+
+              <div class="project-category">
+                <h3>
+                  Models Based Clustering - Implémentation et Application du
+                  Modèle de Mélange Gaussien
+                </h3>
+                <div class="project-category-description">
+                  Ce projet explore l'utilisation de l'algorithme
+                  Expectation-Maximization (EM) pour le modèle de mélange
+                  gaussien. Il comprend un package R, des analyses sur des
+                  ensembles de données simulés et réels, et une documentation
+                  complète. Le projet met en œuvre des techniques de clustering
+                  appliquées aux ensembles de données Iris et MNIST. Note
+                  importante : Les fichiers de données MNIST doivent être placés
+                  dans le dossier mnist_data.
+                </div>
+                <div class="project-category-link">
+                  <a
+                    href="https://github.com/moqim-ghizlan/Models-Based-Clustering---Implementation-et-Application-du-Modele-de-Melange-Gaussien"
+                    target="_blank"
+                    >GitHub</a
+                  >
+                </div>
+              </div>
+
+              <div class="project-category">
+                <h3>
+                  Manifold Learning - Exploration Théorique et Expérimentale
+                </h3>
+                <div class="project-category-description">
+                  Ce projet explore les concepts et applications de
+                  l'apprentissage par variété (Manifold Learning). Il inclut une
+                  analyse détaillée à travers deux articles distincts et un
+                  notebook Jupyter pour reproduire les expériences et
+                  visualisations graphiques. Ce travail vise à approfondir la
+                  compréhension des techniques d'apprentissage non supervisées
+                  et leur application à des ensembles de données complexes.
+                </div>
+                <div class="project-category-link">
+                  <a
+                    href="https://github.com/moqim-ghizlan/Manifold-Learning---Exploration-Theorique-et-Experimentale"
+                    target="_blank"
+                    >GitHub</a
+                  >
+                </div>
+              </div>
+
+              <div class="project-category">
+                <h3>
+                  Exploration en Deep Learning - Concepts Fondamentaux et Études
+                  de Cas
+                </h3>
+                <div class="project-category-description">
+                  Ce projet regroupe deux études complémentaires en deep
+                  learning. Le premier explore les concepts fondamentaux à
+                  travers la prédiction des sorties des portes logiques en
+                  utilisant la rétropropagation. Le second est une étude de cas
+                  approfondie mettant en œuvre des modèles avancés pour analyser
+                  et prédire des données réelles, avec une documentation
+                  détaillée des résultats. Ces projets offrent une vision
+                  pratique et théorique des techniques de deep learning.
+                </div>
+                <div class="project-category-link">
+                  <a
+                    href="https://github.com/moqim-ghizlan/Exploration-en-Deep-Learning---Concepts-Fondamentaux-et-tudes-de-Cas"
+                    target="_blank"
+                    >GitHub</a
+                  >
+                </div>
+              </div>
+
+              <div class="project-category">
+                <h3>Apprentissage Ensembliste - Analyse et Tests de Modèles</h3>
+                <div class="project-category-description">
+                  Ce projet est une implémentation d’analyse et de tests sur des
+                  modèles d’apprentissage ensembliste, utilisant des ensembles
+                  de données variés. Il comprend un rapport détaillé, des
+                  fonctions Python dédiées, un notebook Jupyter pour l'exécution
+                  et un fichier de résultats pré-calculés. Les outils de ce
+                  projet permettent d’expérimenter avec différents ensembles de
+                  données pour explorer les performances des modèles.
+                </div>
+                <div class="project-category-link">
+                  <a
+                    href="https://github.com/moqim-ghizlan/Apprentissage-Ensembliste---Analyse-et-Tests-de-Mod-les"
+                    target="_blank"
+                    >GitHub</a
+                  >
+                </div>
+              </div>
+
+              <div class="project-category">
+                <h3>
+                  SearchEngine - Moteur de Recherche avec API Reddit et Arxiv
+                </h3>
+                <div class="project-category-description">
+                  SearchEngine est un moteur de recherche développé en Python
+                  qui permet d'interroger les plateformes Reddit et Arxiv en
+                  utilisant leurs API respectives. Ce projet vise à collecter et
+                  analyser des documents selon des mots-clés, avec des résultats
+                  classés et affichés soit dans le terminal soit via une
+                  interface graphique Jupyter Notebook.
+                </div>
+                <div class="project-category-link">
+                  <a
+                    href="https://github.com/moqim-ghizlan/SearchEngine---Moteur-de-Recherche-avec-API-Reddit-et-Arxiv"
+                    target="_blank"
+                    >GitHub</a
+                  >
+                </div>
+              </div>
+
+              <div class="project-category">
+                <h3>Planning Poker - Jeu Collaboratif pour la Gestion Agile</h3>
+                <div class="project-category-description">
+                  Planning Poker est une application web interactive développée
+                  avec Django. Elle est conçue pour aider les équipes à estimer
+                  les efforts nécessaires à la réalisation de tâches en
+                  utilisant la méthode Planning Poker. Ce projet inclut des
+                  fonctionnalités telles que l'authentification utilisateur, la
+                  gestion des tâches, et la documentation des modèles et des
+                  contrôleurs.
+                </div>
+                <div class="project-category-link">
+                  <a
+                    href="https://github.com/moqim-ghizlan/Planning-Poker---Jeu-Collaboratif-pour-la-Gestion-Agile"
+                    target="_blank"
+                    >GitHub</a
+                  >
+                </div>
+              </div>
+
+              <div class="project-category">
+                <h3>E-Com - Plateforme de Commerce Électronique</h3>
+                <div class="project-category-description">
+                  E-Com est une application web basée sur Django, développée
+                  pour gérer un système de commerce électronique. Elle offre des
+                  fonctionnalités comme la gestion des articles, des
+                  utilisateurs, et des entreprises, avec une interface
+                  utilisateur moderne et intuitive.
+                </div>
+                <div class="project-category-link">
+                  <a
+                    href="https://github.com/moqim-ghizlan/E-Com---Plateforme-de-Commerce-lectronique"
+                    target="_blank"
+                    >GitHub</a
+                  >
+                </div>
+              </div>
+
+              <div class="project-category">
+                <h3>Gestion des Stages et Apprentissages</h3>
+                <div class="project-category-description">
+                  Ce projet a été développé dans le cadre du projet tutoré de
+                  Licence Professionnelle Métiers de l'Informatique, Conception,
+                  Développement et Test de Logiciels, spécialité : Développement
+                  Web et Mobile. Il concerne la gestion des stages et
+                  apprentissages des étudiants de l'IUT d'Orléans. La gestion
+                  actuelle des stages à l’IUT d’Orléans est assurée par Arexis,
+                  qui ne satisfait pas entièrement les enseignants et le
+                  personnel pédagogique. Ce projet vise à recréer un logiciel
+                  web plus adapté pour gérer les stages et apprentissages.
+                </div>
+                <div class="project-category-link">
+                  <a
+                    href="https://github.com/moqim-ghizlan/Gestion-des-Stages-et-Apprentissages---Plateforme-Web-Intuitive"
+                    target="_blank"
+                    >GitHub</a
+                  >
+                </div>
+              </div>
+              <div class="project-category">
+                <h3>Django-Codeshare - Plateforme de Partage de Code</h3>
+                <div class="project-category-description">
+                  Django-Codeshare est une application web qui permet de
+                  partager, afficher et collaborer sur des fragments de code.
+                  Construite avec Django et Django Rest Framework (DRF), cette
+                  plateforme fournit une interface utilisateur intuitive et des
+                  API REST pour interagir avec les fonctionnalités principales.
+                </div>
+                <div class="project-category-link">
+                  <a
+                    href="https://github.com/moqim-ghizlan/Codeshare---Plateforme-de-Partage-de-Code"
+                    target="_blank"
+                    >GitHub</a
+                  >
+                </div>
+              </div>
+              <div class="project-category">
+                <h3>GM-Movies - Gestionnaire de Films et Séries</h3>
+                <div class="project-category-description">
+                  GM-Movies est une application web conçue pour gérer un
+                  catalogue de films et séries. Développée avec Flask, elle
+                  permet aux utilisateurs d'ajouter des films, des séries et
+                  leurs épisodes, tout en offrant des fonctionnalités
+                  d'authentification et une interface utilisateur intuitive.
+                </div>
+                <div class="project-category-link">
+                  <a
+                    href="https://github.com/moqim-ghizlan/GM-Movies---Gestionnaire-de-Films-et-Series"
+                    target="_blank"
+                    >GitHub</a
+                  >
+                </div>
+              </div>
+              <div class="project-category">
+                <h3>Docker-Container</h3>
+                <div class="project-category-description">
+                  Ce projet illustre l'utilisation de Docker pour construire et
+                  utiliser des conteneurs Docker. Il comprend une application
+                  web basée sur Django et Docker, permettant aux utilisateurs de
+                  communiquer via une interface utilisateur intuitive.
+                </div>
+                <div class="project-category-link">
+                  <a
+                    href="https://github.com/moqim-ghizlan/Docker-Django---Application-Conteneurisee-avec-Django-et-Docker"
+                    target="_blank"
+                    >GitHub</a
+                  >
+                </div>
+              </div>
+              <div class="project-category">
+                <h3>TinyAmazon - Application Web de Catalogue de Produits</h3>
+                <div class="project-category-description">
+                  TinyAmazon est une application web légère développée avec
+                  SvelteKit, conçue pour gérer un catalogue de produits. Elle
+                  offre une navigation fluide et réactive, avec des
+                  fonctionnalités essentielles telles que l'authentification, la
+                  gestion de profils, et la visualisation des produits.
+                  TinyAmazon est idéal pour explorer les capacités de SvelteKit
+                  dans un projet complet.
+                </div>
+                <div class="project-category-link">
+                  <a
+                    href="https://github.com/moqim-ghizlan/TinyAmazon---Application-Web-de-Catalogue-de-Produits"
+                    target="_blank"
+                    >GitHub</a
+                  >
+                </div>
+              </div>
+              <div class="project-category">
+                <h3>Express-Nunjucks - Application Web Dynamique</h3>
+                <div class="project-category-description">
+                  Ce projet est une application web dynamique utilisant
+                  Express.js pour le backend et Nunjucks/EJS pour le rendu des
+                  templates. Il inclut une architecture modulaire pour gérer les
+                  fonctionnalités principales telles que les cartes, les
+                  utilisateurs, les marques, et les commentaires. Avec une
+                  intégration de base de données robuste, ce projet fournit une
+                  interface utilisateur fluide et des fonctionnalités avancées.
+                </div>
+                <div class="project-category-link">
+                  <a
+                    href="https://github.com/moqim-ghizlan/Express-Nunjucks---Application-Web-Dynamique"
+                    target="_blank"
+                    >GitHub</a
+                  >
+                </div>
+              </div>
+              <div class="project-category">
+                <h3>AndroidCars - Gestion des Véhicules</h3>
+                <div class="project-category-description">
+                  AndroidCars est une application Android interactive conçue
+                  pour permettre aux utilisateurs de gérer un catalogue de
+                  véhicules. Elle offre une interface intuitive pour ajouter,
+                  modifier, supprimer, et afficher des voitures, avec la
+                  possibilité de marquer des véhicules comme favoris.
+                  L'application utilise Firebase pour la gestion des données et
+                  propose une expérience utilisateur moderne et fluide.
+                </div>
+                <div class="project-category-link">
+                  <a
+                    href="https://github.com/moqim-ghizlan/AndroidCars---Gestion-des-Vehicules"
+                    target="_blank"
+                    >GitHub</a
+                  >
+                </div>
+              </div>
+              <div class="project-category">
+                <h3>Agenda en Ligne - Application Flutter Multiplateforme</h3>
+                <div class="project-category-description">
+                  Ce projet est une application Flutter conçue pour gérer un
+                  agenda numérique en ligne. Il offre aux utilisateurs la
+                  possibilité d'organiser leurs tâches, projets, et devoirs,
+                  tout en proposant une compatibilité multiplateforme (Android,
+                  iOS, Web, etc.).
+                </div>
+                <div class="project-category-link">
+                  <a
+                    href="https://github.com/moqim-ghizlan/Agenda-en-Ligne---Application-Flutter-Multiplateforme"
+                    target="_blank"
+                    >GitHub</a
+                  >
+                </div>
+              </div>
+              <div class="project-category">
+                <h3>Facelook - Plateforme Sociale Personnalisée</h3>
+                <div class="project-category-description">
+                  Facelook est une application web sociale interactive
+                  construite avec Django. Ce projet offre des fonctionnalités
+                  comme la gestion des utilisateurs, des publications, des
+                  sujets de discussion, et des profils personnalisés.
+                  Initialement développé comme une plateforme sociale, ce projet
+                  a été modifié et enrichi pour inclure des améliorations
+                  spécifiques selon les besoins.
+                </div>
+                <div class="project-category-link">
+                  <a
+                    href="https://github.com/moqim-ghizlan/Facelook---Plateforme-Sociale-Personnalisee--clone-de-facebook"
+                    target="_blank"
+                    >GitHub</a
+                  >
+                </div>
+              </div>
+              <div class="project-category">
+                <h3>GSM-NG - Plateforme de Gestion de Scolarité</h3>
+                <div class="project-category-description">
+                  Ce projet est une plateforme de gestion de la scolarité basée
+                  sur Django. Initialement développé pour la gestion des stages
+                  et des promotions, j'ai repris ce projet pour y apporter des
+                  améliorations et le personnaliser en fonction de mes besoins.
+                  Cette plateforme permet une gestion complète des modules, des
+                  permissions, et des processus liés à la scolarité.
+                </div>
+                <div class="project-category-link">
+                  <a
+                    href="https://github.com/moqim-ghizlan/GSM-NG---Plateforme-de-Gestion-de-Scolarite"
+                    target="_blank"
+                    >GitHub</a
+                  >
+                </div>
+              </div>
+              <div class="project-category">
+                <h3>Gestion de Compte - Application Web Simple et Efficace</h3>
+                <div class="project-category-description">
+                  Ce projet est une application web interactive développée avec
+                  HTML, CSS et JavaScript. Elle offre une solution simple pour
+                  gérer vos dépenses et visualiser vos données financières.
+                  Conçue pour être légère et accessible, l'application permet de
+                  suivre et de manipuler les informations financières à partir
+                  d'une interface intuitive.
+                </div>
+                <div class="project-category-link">
+                  <a
+                    href="https://github.com/moqim-ghizlan/Gestion-de-Compte---Application-Web-Simple-et-Efficace"
+                    target="_blank"
+                    >GitHub</a
+                  >
+                </div>
+              </div>
+              <div class="project-category">
+                <h3>Gestion du Budget - Application Mobile Intuitive</h3>
+                <div class="project-category-description">
+                  Ce projet est une application mobile Android conçue pour
+                  simplifier la gestion des budgets personnels et collaboratifs.
+                  Grâce à une interface intuitive, les utilisateurs peuvent
+                  suivre leurs dépenses, gérer des groupes de partage financier,
+                  et accéder à des historiques détaillés de leurs transactions.
+                  Cette application est idéale pour les particuliers et les
+                  petites équipes cherchant à organiser efficacement leurs
+                  finances.
+                </div>
+                <div class="project-category-link">
+                  <a
+                    href="https://github.com/moqim-ghizlan/Gestion-du-Budget---Application-Mobile-Intuitive"
+                    target="_blank"
+                    >GitHub</a
+                  >
                 </div>
               </div>
             </div>
@@ -304,11 +777,11 @@
 
       <footer>
         <p>📍 3 Rue Alfred De Musset, 45100 Orléans, France</p>
-        <p>Permis B</p>
         <p style="margin-top: 20px; opacity: 0.8">
           © 2025 Ghizlan Moqim - Tous droits réservés
         </p>
       </footer>
     </div>
   </body>
+  <script src="./src/scripts/script.js"></script>
 </html>
