@@ -1,18 +1,14 @@
-// Gestion du thème Dark/Light
 const themeToggle = document.getElementById('theme-toggle');
 const themeIcon = document.getElementById('theme-icon');
 const html = document.documentElement;
 
-// Vérifier le thème sauvegardé ou utiliser la préférence système
 const savedTheme = localStorage.getItem('theme');
 const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 const currentTheme = savedTheme || (systemPrefersDark ? 'dark' : 'light');
 
-// Appliquer le thème initial
 html.setAttribute('data-theme', currentTheme);
 updateThemeIcon(currentTheme);
 
-// Toggle du thème
 themeToggle.addEventListener('click', function () {
     const currentTheme = html.getAttribute('data-theme');
     const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
@@ -26,7 +22,6 @@ function updateThemeIcon(theme) {
     themeIcon.textContent = theme === 'dark' ? '☀️' : '🌙';
 }
 
-// Smooth scroll pour les liens de navigation
 document.querySelectorAll('.navbar-link').forEach(link => {
     link.addEventListener('click', function (e) {
         if (this.getAttribute('href').startsWith('#')) {
@@ -39,7 +34,6 @@ document.querySelectorAll('.navbar-link').forEach(link => {
                     top: targetPosition,
                     behavior: 'smooth'
                 });
-                // Fermer le menu mobile si ouvert
                 document.getElementById('navbar-menu').classList.remove('active');
                 document.getElementById('navbar-toggle').classList.remove('active');
             }
@@ -47,7 +41,6 @@ document.querySelectorAll('.navbar-link').forEach(link => {
     });
 });
 
-// Toggle menu mobile
 const navbarToggle = document.getElementById('navbar-toggle');
 const navbarMenu = document.getElementById('navbar-menu');
 
@@ -56,7 +49,6 @@ navbarToggle.addEventListener('click', function () {
     navbarToggle.classList.toggle('active');
 });
 
-// Effet de scroll - navbar devient opaque
 let lastScroll = 0;
 window.addEventListener('scroll', function () {
     const navbar = document.getElementById('navbar');
@@ -71,7 +63,6 @@ window.addEventListener('scroll', function () {
     lastScroll = currentScroll;
 });
 
-// Highlight du lien actif lors du scroll
 window.addEventListener('scroll', function () {
     const sections = document.querySelectorAll('section[id]');
     const navLinks = document.querySelectorAll('.navbar-link[href^="#"]');

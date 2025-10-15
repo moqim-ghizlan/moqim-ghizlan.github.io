@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Playpen%20Sans%20Deva:700|Playpen%20Sans%20Deva:400');
 
-/* Variables pour le thème clair */
 :root {
     --text: #060405;
     --background: #fbf8fa;
@@ -11,7 +10,6 @@
     --navbar-bg-scrolled: rgba(251, 248, 250, 0.95);
 }
 
-/* Variables pour le thème sombre */
 [data-theme="dark"] {
     --text: #faf5f9;
     --background: #1a1618;
@@ -89,7 +87,6 @@ small {
     padding: 20px;
 }
 
-/* Navbar Styles */
 .navbar {
     position: fixed;
     top: 0;
@@ -191,7 +188,6 @@ small {
     background: linear-gradient(135deg, var(--accent) 0%, var(--primary) 100%);
 }
 
-/* Bouton hamburger pour mobile */
 .navbar-toggle {
     display: none;
     flex-direction: column;
@@ -529,7 +525,6 @@ footer {
     color: var(--text);
 }
 
-/* Bouton de basculement du thème */
 .theme-toggle {
     background: transparent;
     border: 2px solid var(--primary);
@@ -564,7 +559,6 @@ footer {
     transform: scale(1.1);
 }
 
-/* Ajustements pour le mode sombre */
 [data-theme="dark"] body {
     background: linear-gradient(135deg, var(--secondary) 0%, var(--accent) 100%);
 }
