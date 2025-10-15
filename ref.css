@@ -1,13 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Playpen%20Sans%20Deva:700|Playpen%20Sans%20Deva:400');
 
-:root {
-    --text: #060405;
-    --background: #fbf8fa;
-    --primary: #9e6688;
-    --secondary: #c4afa3;
-    --accent: #b5a98b;
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -22,16 +14,12 @@ body {
     font-family: 'Playpen Sans Deva', sans-serif;
     font-weight: 400;
     line-height: 1.6;
-    color: var(--text);
-    background: linear-gradient(135deg, var(--secondary) 0%, var(--accent) 100%);
+    color: #333;
+    background: linear-gradient(135deg, #000000 0%, #9f9fa0 100%);
     min-height: 100vh;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5 {
+h1, h2, h3, h4, h5 {
     font-family: 'Playpen Sans Deva', sans-serif;
     font-weight: 700;
 }
@@ -44,10 +32,10 @@ h1 {
 
 h2 {
     font-size: 2.525rem;
-    color: var(--primary);
+    color: #000000;
     margin-bottom: 25px;
     padding-bottom: 10px;
-    border-bottom: 3px solid var(--primary);
+    border-bottom: 3px solid #000000;
 }
 
 h3 {
@@ -76,7 +64,7 @@ small {
 header {
     text-align: center;
     padding: 60px 20px;
-    color: var(--text);
+    color: white;
     animation: fadeIn 1s ease-in;
 }
 
@@ -85,7 +73,7 @@ header {
     height: 350px;
     border-radius: 50%;
     margin: 0 auto 30px;
-    border: 5px solid var(--background);
+    border: 5px solid white;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     object-fit: cover;
     animation: fadeIn 1.2s ease-in;
@@ -96,7 +84,7 @@ header {
     height: 180px;
     border-radius: 50%;
     margin: 0 auto 30px;
-    border: 5px solid var(--background);
+    border: 5px solid white;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     background: rgba(255, 255, 255, 0.2);
     display: flex;
@@ -128,25 +116,22 @@ header {
 }
 
 .contact-icons a {
-    color: var(--text);
+    color: white;
     text-decoration: none;
     padding: 10px 20px;
-    background: var(--background);
+    background: rgba(255, 255, 255, 0.2);
     border-radius: 25px;
     transition: all 0.3s;
     backdrop-filter: blur(10px);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .contact-icons a:hover {
-    background: var(--accent);
-    color: var(--background);
+    background: rgba(255, 255, 255, 0.3);
     transform: translateY(-3px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .main-content {
-    background: var(--background);
+    background: white;
     border-radius: 20px;
     padding: 40px;
     margin: 20px 0;
@@ -162,28 +147,28 @@ section {
 .formation-item {
     margin-bottom: 30px;
     padding: 20px;
-    background: rgba(196, 175, 163, 0.1);
+    background: #f8f9fa;
     border-radius: 10px;
-    border-left: 4px solid var(--primary);
+    border-left: 4px solid #000000;
     transition: transform 0.3s;
 }
 
 .experience-item:hover,
 .formation-item:hover {
     transform: translateX(10px);
-    box-shadow: 0 5px 15px rgba(158, 102, 136, 0.2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .job-title {
     font-size: 1.3em;
     font-weight: bold;
-    color: var(--primary);
+    color: #000000;
     margin-bottom: 5px;
 }
 
 .company {
     font-weight: bold;
-    color: var(--accent);
+    color: #4a4a4a;
     margin-bottom: 5px;
 }
 
@@ -209,7 +194,7 @@ section {
     scroll-behavior: smooth;
     padding: 10px 5px 20px 5px;
     scrollbar-width: thin;
-    scrollbar-color: var(--primary) var(--background);
+    scrollbar-color: #000000 #f0f0f0;
 }
 
 .skills-grid::-webkit-scrollbar,
@@ -219,27 +204,27 @@ section {
 
 .skills-grid::-webkit-scrollbar-track,
 .project-grid::-webkit-scrollbar-track {
-    background: var(--background);
+    background: #f0f0f0;
     border-radius: 10px;
 }
 
 .skills-grid::-webkit-scrollbar-thumb,
 .project-grid::-webkit-scrollbar-thumb {
-    background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+    background: linear-gradient(135deg, #000000 0%, #4a4a4a 100%);
     border-radius: 10px;
 }
 
 .skills-grid::-webkit-scrollbar-thumb:hover,
 .project-grid::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(135deg, var(--accent) 0%, var(--primary) 100%);
+    background: linear-gradient(135deg, #4a4a4a 0%, #000000 100%);
 }
 
 .skill-category,
 .project-category {
-    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+    background: linear-gradient(135deg, #000000 0%, #4a4a4a 100%);
     padding: 20px;
     border-radius: 10px;
-    color: var(--background);
+    color: white;
     transition: transform 0.3s;
     min-width: 280px;
     flex-shrink: 0;
@@ -248,7 +233,7 @@ section {
 .skill-category:hover,
 .project-category:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(158, 102, 136, 0.4);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
 }
 
 .skill-category h3,
@@ -274,7 +259,7 @@ section {
     content: "▹";
     position: absolute;
     left: 0;
-    color: var(--background);
+    color: #fff;
 }
 
 .project-category {
@@ -292,8 +277,7 @@ section {
     height: calc(400px - 150px - 50px);
     overflow-y: auto;
     scrollbar-width: thin;
-    scrollbar-color: var(--background) rgba(255, 255, 255, 0.2);
-    scroll-behavior: auto;
+    scrollbar-color: #000000 #f0f0f0;
 }
 
 .project-category-description::-webkit-scrollbar {
@@ -301,17 +285,17 @@ section {
 }
 
 .project-category-description::-webkit-scrollbar-track {
-    background: rgba(255, 255, 255, 0.1);
+    background: #f0f0f0;
     border-radius: 10px;
 }
 
 .project-category-description::-webkit-scrollbar-thumb {
-    background: var(--background);
+    background: rgba(255, 255, 255, 0.5);
     border-radius: 10px;
 }
 
 .project-category-description::-webkit-scrollbar-thumb:hover {
-    background: var(--accent);
+    background: rgba(255, 255, 255, 0.7);
 }
 
 .project-category-link {
@@ -321,8 +305,8 @@ section {
     height: 50px;
     margin-top: 10px;
     padding: 10px;
-    background: var(--background);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(135deg, #ffffff 0%, #e0e0e0 100%);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
     text-decoration: none;
     transition: all 0.3s;
@@ -330,18 +314,13 @@ section {
 
 .project-category-link a {
     text-decoration: none;
-    color: var(--primary);
+    color: #000000;
     font-weight: 700;
 }
 
 .project-category-link:hover {
     transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(158, 102, 136, 0.3);
-    background: var(--accent);
-}
-
-.project-category-link:hover a {
-    color: var(--background);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
 }
 
 .languages {
@@ -354,8 +333,8 @@ section {
 .language-item {
     text-align: center;
     padding: 20px;
-    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
-    color: var(--background);
+    background: linear-gradient(135deg, #000000 0%, #4a4a4a 100%);
+    color: white;
     border-radius: 10px;
     min-width: 150px;
     transition: transform 0.3s;
@@ -363,20 +342,19 @@ section {
 
 .language-item:hover {
     transform: scale(1.05);
-    box-shadow: 0 10px 25px rgba(158, 102, 136, 0.4);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
 }
 
 footer {
     text-align: center;
     padding: 30px;
-    color: var(--text);
+    color: white;
 }
 
 @keyframes fadeIn {
     from {
         opacity: 0;
     }
-
     to {
         opacity: 1;
     }
@@ -387,7 +365,6 @@ footer {
         opacity: 0;
         transform: translateY(30px);
     }
-
     to {
         opacity: 1;
         transform: translateY(0);
