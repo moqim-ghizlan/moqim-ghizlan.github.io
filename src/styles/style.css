@@ -588,6 +588,9 @@ footer {
     background: var(--primary);
     color: var(--background);
 }
+[data-theme="dark"] .navbar-menu {
+    background: var(--background);
+}
 
 [data-theme="dark"] header {
     color: var(--text);
@@ -596,6 +599,7 @@ footer {
 [data-theme="dark"] footer {
     color: var(--text);
 }
+
 
 @keyframes fadeIn {
     from {
