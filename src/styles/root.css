@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Playpen%20Sans%20Deva:700|Playpen%20Sans%20Deva:400');
+
+:root {
+    --text: #060405;
+    --background: #fbf8fa;
+    --primary: #4e3f48;
+    --secondary: #c4afa3;
+    --accent: #b5a98b;
+    --navbar-bg: rgba(251, 248, 250, 0.85);
+    --navbar-bg-scrolled: rgba(251, 248, 250, 0.95);
+}
+
+[data-theme="dark"] {
+    --text: #faf5f9;
+    --background: #1a1618;
+    --primary: #18718b;
+    --secondary: #5c504b;
+    --accent: #74684a;
+    --navbar-bg: rgba(26, 22, 24, 0.7);
+    --navbar-bg-scrolled: rgba(26, 22, 24, 0.95);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: 'Playpen Sans Deva', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--text);
+    background: linear-gradient(135deg, var(--secondary) 0%, var(--accent) 100%);
+    min-height: 100vh;
+    padding-top: 80px;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Playpen Sans Deva', sans-serif;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 3.366rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    font-size: 2.525rem;
+    color: var(--primary);
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid var(--primary);
+}
+
+h3 {
+    font-size: 1.894rem;
+    margin-bottom: 15px;
+}
+
+h4 {
+    font-size: 1.421rem;
+}
+
+h5 {
+    font-size: 1.066rem;
+}
+
+small {
+    font-size: 0.600rem;
+}

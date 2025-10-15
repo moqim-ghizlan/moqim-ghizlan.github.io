@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./src/styles/root.css" />
     <link rel="stylesheet" href="./src/styles/style.css" />
-    <title>Ghizlan Moqim - Développeur Full-Stack</title>
+    <title data-i18n="title">Ghizlan Moqim - Développeur Full-Stack</title>
   </head>
   <body>
     <div class="container">
@@ -18,26 +18,90 @@
             <span></span>
           </button>
           <ul class="navbar-menu" id="navbar-menu">
-            <li><a href="#experience" class="navbar-link">Expérience</a></li>
-            <li><a href="#formation" class="navbar-link">Formation</a></li>
-            <li><a href="#competences" class="navbar-link">Compétences</a></li>
-            <li><a href="#projets" class="navbar-link">Projets</a></li>
-            <li><a href="#langues" class="navbar-link">Langues</a></li>
+            <li>
+              <a
+                href="#experience"
+                class="navbar-link"
+                data-i18n="nav_experience"
+                >Expérience</a
+              >
+            </li>
+            <li>
+              <a href="#formation" class="navbar-link" data-i18n="nav_formation"
+                >Formation</a
+              >
+            </li>
+            <li>
+              <a
+                href="#competences"
+                class="navbar-link"
+                data-i18n="nav_competences"
+                >Compétences</a
+              >
+            </li>
+            <li>
+              <a href="#projets" class="navbar-link" data-i18n="nav_projets"
+                >Projets</a
+              >
+            </li>
+            <li>
+              <a href="#langues" class="navbar-link" data-i18n="nav_langues"
+                >Langues</a
+              >
+            </li>
             <li>
               <a
                 href="mailto:moqim.ghizlan@hotmail.com"
                 class="navbar-link navbar-cta"
+                data-i18n="nav_contact"
                 >Contact</a
               >
             </li>
-            <li>
-              <button
-                class="theme-toggle"
-                id="theme-toggle"
-                aria-label="Toggle theme"
-              >
-                <span class="theme-icon" id="theme-icon">🌙</span>
-              </button>
+            <li class="language-dropdown">
+              <div class="language-dropdown-selector">
+                <button class="lang-selector" id="lang-selector">
+                  <span class="lang-flag" id="current-lang-flag">🇫🇷</span>
+                  <span class="lang-code" id="current-lang-code">FR</span>
+                  <span class="lang-arrow">▼</span>
+                </button>
+                <button
+                  class="theme-toggle"
+                  id="theme-toggle"
+                  aria-label="Toggle theme"
+                >
+                  <span class="theme-icon" id="theme-icon">🌙</span>
+                </button>
+              </div>
+              <ul class="lang-menu" id="lang-menu">
+                <li>
+                  <button
+                    class="lang-option active"
+                    data-lang="fr"
+                    data-flag="🇫🇷"
+                  >
+                    <span class="lang-flag">🇫🇷</span>
+                    <span>Français</span>
+                  </button>
+                </li>
+                <li>
+                  <button class="lang-option" data-lang="en" data-flag="🇬🇧">
+                    <span class="lang-flag">🇬🇧</span>
+                    <span>English</span>
+                  </button>
+                </li>
+                <li>
+                  <button class="lang-option" data-lang="ar" data-flag="🇸🇦">
+                    <span class="lang-flag">🇸🇦</span>
+                    <span>العربية</span>
+                  </button>
+                </li>
+                <li>
+                  <button class="lang-option" data-lang="es" data-flag="🇪🇸">
+                    <span class="lang-flag">🇪🇸</span>
+                    <span>Español</span>
+                  </button>
+                </li>
+              </ul>
             </li>
           </ul>
         </div>
@@ -48,9 +112,11 @@
           alt="Ghizlan Moqim"
           class="profile-photo"
         />
-        <h1>GHIZLAN MOQIM</h1>
-        <div class="subtitle">Développeur Full-Stack</div>
-        <p class="tagline">
+        <h1 data-i18n="profile_name">GHIZLAN MOQIM</h1>
+        <div class="subtitle" data-i18n="profile_title">
+          Développeur Full-Stack
+        </div>
+        <p class="tagline" data-i18n="profile_tagline">
           Développeur web passionné, je conçois des applications modernes et
           performantes en front-end et back-end. Fort de plusieurs expériences
           sur des projets complets, j'aime créer des solutions claires,
@@ -76,25 +142,31 @@
 
       <div class="main-content">
         <section id="experience">
-          <h2>Expérience Professionnelle</h2>
+          <h2 data-i18n="experience_title">Expérience Professionnelle</h2>
 
           <div class="experience-item">
-            <div class="job-title">
+            <div class="job-title" data-i18n="experience_1_job_title">
               Développeur Web Full-Stack / Responsable de Développement
             </div>
-            <div class="company">Drones Pro | Orléans, France</div>
-            <div class="date">Septembre 2024 - Octobre 2025 (CDD)</div>
+            <div class="company" data-i18n="experience_1_company">
+              Drones Pro | Orléans, France
+            </div>
+            <div class="date" data-i18n="experience_1_date">
+              Septembre 2024 - Octobre 2025 (CDD)
+            </div>
             <ul>
-              <li>
+              <li data-i18n="experience_1_description_1">
                 Responsable du développement d'un dashboard analytique interne
               </li>
-              <li>
+              <li data-i18n="experience_1_description_2">
                 Conception et implémentation d'une application web en
                 Python/Django pour le suivi des ventes et la visualisation des
                 données
               </li>
-              <li>Intégration d'API et automatisation des rapports internes</li>
-              <li>
+              <li data-i18n="experience_1_description_3">
+                Intégration d'API et automatisation des rapports internes
+              </li>
+              <li data-i18n="experience_1_description_4">
                 Collaboration avec l'équipe data pour optimiser les performances
                 et l'ergonomie du produit
               </li>
@@ -102,43 +174,57 @@
           </div>
 
           <div class="experience-item">
-            <div class="job-title">Stage - Développeur Web Full-Stack</div>
-            <div class="company">Drones Pro | Orléans, France</div>
-            <div class="date">Juin 2024 - Septembre 2024</div>
+            <div class="job-title" data-i18n="experience_2_job_title">
+              Stage - Développeur Web Full-Stack
+            </div>
+            <div class="company" data-i18n="experience_2_company">
+              Drones Pro | Orléans, France
+            </div>
+            <div class="date" data-i18n="experience_2_date">
+              Juin 2024 - Septembre 2024
+            </div>
             <ul>
-              <li>
+              <li data-i18n="experience_2_description_1">
                 Maintenance du site principal et développement de nouveaux
                 services
               </li>
-              <li>
+              <li data-i18n="experience_2_description_2">
                 Refonte partielle du front-end sous Angular, amélioration du
                 back-end en Java/Spring Boot
               </li>
-              <li>Optimisation des performances et correction de bugs</li>
-              <li>
+              <li data-i18n="experience_2_description_3">
+                Optimisation des performances et correction de bugs
+              </li>
+              <li data-i18n="experience_2_description_4">
                 Participation aux revues de code et à la mise en production
               </li>
             </ul>
           </div>
 
           <div class="experience-item">
-            <div class="job-title">Stage - Développeur Web Full-Stack</div>
-            <div class="company">Drones Pro | Orléans, France</div>
-            <div class="date">Mars 2023 - Juillet 2023</div>
+            <div class="job-title" data-i18n="experience_3_job_title">
+              Stage - Développeur Web Full-Stack
+            </div>
+            <div class="company" data-i18n="experience_3_company">
+              Drones Pro | Orléans, France
+            </div>
+            <div class="date" data-i18n="experience_3_date">
+              Mars 2023 - Juillet 2023
+            </div>
             <ul>
-              <li>
+              <li data-i18n="experience_3_description_1">
                 Conception et développement d'une application web de gestion
                 interne
               </li>
-              <li>
+              <li data-i18n="experience_3_description_2">
                 Mise en place d'une architecture Java/Spring Boot côté serveur
                 et Angular côté client
               </li>
-              <li>
+              <li data-i18n="experience_3_description_3">
                 Création des interfaces utilisateur, authentification et gestion
                 des rôles
               </li>
-              <li>
+              <li data-i18n="experience_3_description_4">
                 Déploiement sur serveur interne et rédaction de la documentation
                 technique
               </li>
@@ -147,90 +233,109 @@
         </section>
 
         <section id="formation">
-          <h2>Formation</h2>
+          <h2 data-i18n="formation_title">Formation</h2>
 
           <div class="formation-item">
-            <div class="job-title">Master Informatique & Web Development</div>
-            <div class="company">Université Lyon 2</div>
-            <div class="date">2023 - 2025</div>
+            <div class="job-title" data-i18n="formation_1_title">
+              Master Informatique & Web Development
+            </div>
+            <div class="company" data-i18n="formation_1_school">
+              Université Lyon 2
+            </div>
+            <div class="date" data-i18n="formation_1_date">2023 - 2025</div>
           </div>
 
           <div class="formation-item">
-            <div class="job-title">Licence Pro Développement Web & Mobile</div>
-            <div class="company">IUT Orléans</div>
-            <div class="date">2022 - 2023</div>
+            <div class="job-title" data-i18n="formation_2_title">
+              Licence Pro Développement Web & Mobile
+            </div>
+            <div class="company" data-i18n="formation_2_school">
+              IUT Orléans
+            </div>
+            <div class="date" data-i18n="formation_2_date">2022 - 2023</div>
           </div>
 
           <div class="formation-item">
-            <div class="job-title">DUT Informatique et Développement</div>
-            <div class="company">IUT Orléans</div>
-            <div class="date">2020 - 2022</div>
+            <div class="job-title" data-i18n="formation_3_title">
+              DUT Informatique et Développement
+            </div>
+            <div class="company" data-i18n="formation_3_school">
+              IUT Orléans
+            </div>
+            <div class="date" data-i18n="formation_3_date">2020 - 2022</div>
           </div>
         </section>
 
         <section id="competences">
-          <h2>Compétences & Expertise</h2>
+          <h2 data-i18n="competences_title">Compétences & Expertise</h2>
+
           <div class="skills-slider-container">
             <div class="skills-grid">
               <div class="skill-category">
-                <h3>Web & Frontend/Backend</h3>
+                <h3 data-i18n="competence_1_title">Web & Frontend/Backend</h3>
                 <ul>
-                  <li>HTML, CSS</li>
-                  <li>React, Angular</li>
-                  <li>Node.js</li>
-                  <li>Spring Boot, Symfony</li>
-                  <li>Frameworks web modernes</li>
+                  <li data-i18n="competence_1_item_1">HTML, CSS</li>
+                  <li data-i18n="competence_1_item_2">React, Angular</li>
+                  <li data-i18n="competence_1_item_3">Node.js</li>
+                  <li data-i18n="competence_1_item_4">Spring Boot, Symfony</li>
+                  <li data-i18n="competence_1_item_5">
+                    Frameworks web modernes
+                  </li>
                 </ul>
               </div>
 
               <div class="skill-category">
-                <h3>Programmation & BDD</h3>
+                <h3 data-i18n="competence_2_title">Programmation & BDD</h3>
                 <ul>
-                  <li>Python, Java, PHP</li>
-                  <li>JavaScript</li>
-                  <li>SQL</li>
-                  <li>Gestion d'APIs</li>
-                  <li>Jenkins</li>
+                  <li data-i18n="competence_2_item_1">Python, Java, PHP</li>
+                  <li data-i18n="competence_2_item_2">JavaScript</li>
+                  <li data-i18n="competence_2_item_3">SQL</li>
+                  <li data-i18n="competence_2_item_4">Gestion d'APIs</li>
+                  <li data-i18n="competence_2_item_5">Jenkins</li>
                 </ul>
               </div>
 
               <div class="skill-category">
-                <h3>Outils & Environnements</h3>
+                <h3 data-i18n="competence_3_title">Outils & Environnements</h3>
                 <ul>
-                  <li>Git, Docker</li>
-                  <li>VS Code, npm, Webpack</li>
-                  <li>Bash, SSH</li>
-                  <li>Top, Ps, Streamlit</li>
+                  <li data-i18n="competence_3_item_1">Git, Docker</li>
+                  <li data-i18n="competence_3_item_2">VS Code, npm, Webpack</li>
+                  <li data-i18n="competence_3_item_3">Bash, SSH</li>
+                  <li data-i18n="competence_3_item_4">Top, Ps, Streamlit</li>
                 </ul>
               </div>
 
               <div class="skill-category">
-                <h3>Data & Workflows</h3>
+                <h3 data-i18n="competence_4_title">Data & Workflows</h3>
                 <ul>
-                  <li>Automatisation des tâches</li>
-                  <li>Traitement de données</li>
-                  <li>Visualisation de données</li>
-                  <li>Intégration d'API</li>
+                  <li data-i18n="competence_4_item_1">
+                    Automatisation des tâches
+                  </li>
+                  <li data-i18n="competence_4_item_2">Traitement de données</li>
+                  <li data-i18n="competence_4_item_3">
+                    Visualisation de données
+                  </li>
+                  <li data-i18n="competence_4_item_4">Intégration d'API</li>
                 </ul>
               </div>
 
               <div class="skill-category">
-                <h3>Webmarketing</h3>
+                <h3 data-i18n="competence_5_title">Webmarketing</h3>
                 <ul>
-                  <li>Google Ads (AdWords)</li>
-                  <li>Google Analytics 4</li>
-                  <li>Google Tag Manager</li>
-                  <li>SEO/SEA</li>
-                  <li>Email marketing</li>
+                  <li data-i18n="competence_5_item_1">Google Ads (AdWords)</li>
+                  <li data-i18n="competence_5_item_2">Google Analytics 4</li>
+                  <li data-i18n="competence_5_item_3">Google Tag Manager</li>
+                  <li data-i18n="competence_5_item_4">SEO/SEA</li>
+                  <li data-i18n="competence_5_item_5">Email marketing</li>
                 </ul>
               </div>
 
               <div class="skill-category">
-                <h3>Méthodologies</h3>
+                <h3 data-i18n="competence_6_title">Méthodologies</h3>
                 <ul>
-                  <li>Scrum</li>
-                  <li>Kanban</li>
-                  <li>Environnement agile</li>
+                  <li data-i18n="competence_6_item_1">Scrum</li>
+                  <li data-i18n="competence_6_item_2">Kanban</li>
+                  <li data-i18n="competence_6_item_3">Environnement agile</li>
                 </ul>
               </div>
             </div>
@@ -245,258 +350,277 @@
             </h4>
             <div class="project-grid">
               <div class="project-category">
-                <h3>Intelligent Document Retrieval System</h3>
-                <div class="project-category-description">
-                  This project aims to develop an advanced document retrieval
-                  system that integrates both traditional text-based search
-                  methods and graph-based approaches. The objective is to
-                  explore how incorporating document relationships within a
-                  graph structure can enhance search relevance and ranking.
+                <h3 data-i18n="project_1_title">
+                  Intelligent Document Retrieval System
+                </h3>
+                <div
+                  class="project-category-description"
+                  data-i18n="project_1_description"
+                >
+                  Développement d’un système avancé de recherche documentaire
+                  intégrant à la fois les méthodes textuelles et les approches
+                  basées sur les graphes pour améliorer la pertinence et le
+                  classement des résultats.
                 </div>
                 <div class="project-category-link">
                   <a
                     href="https://github.com/moqim-ghizlan/Graphes-Intelligent-Document-Retrieval-System"
                     target="_blank"
+                    data-i18n="project_1_link"
                     >GitHub</a
                   >
                 </div>
               </div>
 
               <div class="project-category">
-                <h3>XAI Projects Interpretability</h3>
-                <div class="project-category-description">
-                  Projet sur l'interprétation des modèles de Machine Learning,
-                  explorant des méthodes telles que SHAP, les contre-factuels,
-                  Grad-CAM, LRP, LLM (BERT) et l'explicabilité des GNN. Chaque
-                  sous-projet fournit des insights précieux dans des domaines
-                  spécifiques de l'analyse de données et des modèles d'IA.
+                <h3 data-i18n="project_2_title">
+                  XAI Projects Interpretability
+                </h3>
+                <div
+                  class="project-category-description"
+                  data-i18n="project_2_description"
+                >
+                  Projet d’interprétation des modèles de Machine Learning,
+                  explorant des méthodes comme SHAP, Grad-CAM, LRP, et
+                  l’explicabilité des GNN et LLM.
                 </div>
                 <div class="project-category-link">
                   <a
-                    href="https://github.com/moqim-ghizlan/XAI-Project-Interpretability?tab=readme-ov-file#xai-projects-interpretability"
+                    href="https://github.com/moqim-ghizlan/XAI-Project-Interpretability"
                     target="_blank"
+                    data-i18n="project_2_link"
                     >GitHub</a
                   >
                 </div>
               </div>
 
               <div class="project-category">
-                <h3>Temporal Data Analysis - Étude des Séries Temporelles</h3>
-                <div class="project-category-description">
-                  Ce projet explore l'analyse des séries temporelles en
-                  utilisant des données réelles liées aux observations des
-                  taches solaires. À travers un notebook Jupyter et un rapport
-                  PDF, il applique des techniques d'analyse temporelle pour
-                  comprendre les tendances, les saisons et les anomalies
-                  présentes dans les données. Ce travail met en lumière des
-                  outils essentiels pour manipuler et analyser des données
-                  temporelles dans des domaines variés.
+                <h3 data-i18n="project_3_title">
+                  Temporal Data Analysis - Étude des Séries Temporelles
+                </h3>
+                <div
+                  class="project-category-description"
+                  data-i18n="project_3_description"
+                >
+                  Analyse des séries temporelles à partir de données réelles,
+                  mise en œuvre de techniques de traitement, visualisation et
+                  détection d’anomalies.
                 </div>
                 <div class="project-category-link">
                   <a
                     href="https://github.com/moqim-ghizlan/Temporal-Data-Analysis---Etude-des-Series-Temporelles"
                     target="_blank"
+                    data-i18n="project_3_link"
                     >GitHub</a
                   >
                 </div>
               </div>
 
               <div class="project-category">
-                <h3>Big Data Management avec MapReduce</h3>
-                <div class="project-category-description">
-                  Ce projet illustre l'utilisation de MapReduce pour traiter un
-                  large ensemble de données textuelles. Il compare les
-                  performances entre une méthode séquentielle et une méthode
-                  parallèle, en utilisant le multi-processing pour exploiter
-                  plusieurs cœurs CPU.
+                <h3 data-i18n="project_4_title">
+                  Big Data Management avec MapReduce
+                </h3>
+                <div
+                  class="project-category-description"
+                  data-i18n="project_4_description"
+                >
+                  Utilisation de MapReduce pour traiter de grands ensembles de
+                  données textuelles et comparaison des performances entre
+                  méthodes séquentielles et parallèles.
                 </div>
                 <div class="project-category-link">
                   <a
                     href="https://github.com/moqim-ghizlan/Big-Data-Management-avec-MapReduce"
                     target="_blank"
+                    data-i18n="project_4_link"
                     >GitHub</a
                   >
                 </div>
               </div>
 
               <div class="project-category">
-                <h3>Big Data Management avec MongoDB</h3>
-                <div class="project-category-description">
-                  Ce projet illustre l'utilisation de MongoDB pour la gestion et
-                  l'analyse de grandes collections de données. À travers des
-                  exemples concrets, il démontre des opérations comme
-                  l'agrégation, les projections, les jointures, et le tri pour
-                  explorer et analyser des jeux de données volumineux.
+                <h3 data-i18n="project_5_title">
+                  Big Data Management avec MongoDB
+                </h3>
+                <div
+                  class="project-category-description"
+                  data-i18n="project_5_description"
+                >
+                  Gestion et analyse de collections volumineuses de données avec
+                  MongoDB, utilisant des opérations d’agrégation et de jointure.
                 </div>
                 <div class="project-category-link">
                   <a
                     href="https://github.com/moqim-ghizlan/Big-Data-Management-avec-MongoDB"
                     target="_blank"
+                    data-i18n="project_5_link"
                     >GitHub</a
                   >
                 </div>
               </div>
 
               <div class="project-category">
-                <h3>
+                <h3 data-i18n="project_6_title">
                   Optimisation - Implémentation de Lasso avec Descente de
                   Gradient Stochastique
                 </h3>
-                <div class="project-category-description">
-                  Ce projet explore l'optimisation en utilisant l'algorithme de
-                  descente de gradient stochastique (SGD) appliqué au modèle de
-                  régression Lasso. Il inclut des scripts Python et un notebook
-                  Jupyter pour analyser les performances et visualiser les
-                  résultats. Ce projet est idéal pour comprendre les concepts
-                  fondamentaux des méthodes d'optimisation et leur application
-                  en apprentissage machine.
+                <div
+                  class="project-category-description"
+                  data-i18n="project_6_description"
+                >
+                  Implémentation de l’algorithme SGD pour la régression Lasso,
+                  analyse des performances et visualisation des résultats.
                 </div>
                 <div class="project-category-link">
                   <a
                     href="https://github.com/moqim-ghizlan/Optimisation---Implementation-de-Lasso-avec-Descente-de-Gradient-Stochastique"
                     target="_blank"
+                    data-i18n="project_6_link"
                     >GitHub</a
                   >
                 </div>
               </div>
 
               <div class="project-category">
-                <h3>
+                <h3 data-i18n="project_7_title">
                   NLP Project - Analyse et Applications en Traitement
                   Automatique du Langage
                 </h3>
-                <div class="project-category-description">
-                  Ce projet explore des concepts et applications du traitement
-                  automatique du langage (NLP) en utilisant des ensembles de
-                  données spécifiques. Il inclut un notebook Jupyter documentant
-                  les analyses et les résultats, ainsi que des scripts Python
-                  pour l'implémentation. Le projet met l'accent sur des tâches
-                  fondamentales en NLP avec des visualisations et des insights
-                  pratiques.
+                <div
+                  class="project-category-description"
+                  data-i18n="project_7_description"
+                >
+                  Étude et mise en œuvre de modèles NLP pour l’analyse
+                  textuelle, classification et visualisation des données
+                  linguistiques.
                 </div>
                 <div class="project-category-link">
                   <a
                     href="https://github.com/moqim-ghizlan/NLP-Project---Analyse-et-Applications-en-Traitement-Automatique-du-Langage"
                     target="_blank"
+                    data-i18n="project_7_link"
                     >GitHub</a
                   >
                 </div>
               </div>
 
               <div class="project-category">
-                <h3>
-                  Models Based Clustering - Implémentation et Application du
-                  Modèle de Mélange Gaussien
+                <h3 data-i18n="project_8_title">
+                  Models Based Clustering - Modèle de Mélange Gaussien
                 </h3>
-                <div class="project-category-description">
-                  Ce projet explore l'utilisation de l'algorithme
-                  Expectation-Maximization (EM) pour le modèle de mélange
-                  gaussien. Il comprend un package R, des analyses sur des
-                  ensembles de données simulés et réels, et une documentation
-                  complète. Le projet met en œuvre des techniques de clustering
-                  appliquées aux ensembles de données Iris et MNIST. Note
-                  importante : Les fichiers de données MNIST doivent être placés
-                  dans le dossier mnist_data.
+                <div
+                  class="project-category-description"
+                  data-i18n="project_8_description"
+                >
+                  Implémentation du modèle EM pour le clustering basé sur les
+                  mélanges gaussiens, appliqué aux ensembles de données Iris et
+                  MNIST.
                 </div>
                 <div class="project-category-link">
                   <a
                     href="https://github.com/moqim-ghizlan/Models-Based-Clustering---Implementation-et-Application-du-Modele-de-Melange-Gaussien"
                     target="_blank"
+                    data-i18n="project_8_link"
                     >GitHub</a
                   >
                 </div>
               </div>
 
               <div class="project-category">
-                <h3>
+                <h3 data-i18n="project_9_title">
                   Manifold Learning - Exploration Théorique et Expérimentale
                 </h3>
-                <div class="project-category-description">
-                  Ce projet explore les concepts et applications de
-                  l'apprentissage par variété (Manifold Learning). Il inclut une
-                  analyse détaillée à travers deux articles distincts et un
-                  notebook Jupyter pour reproduire les expériences et
-                  visualisations graphiques. Ce travail vise à approfondir la
-                  compréhension des techniques d'apprentissage non supervisées
-                  et leur application à des ensembles de données complexes.
+                <div
+                  class="project-category-description"
+                  data-i18n="project_9_description"
+                >
+                  Exploration des méthodes d’apprentissage par variété et
+                  application sur des ensembles complexes pour visualiser les
+                  structures latentes.
                 </div>
                 <div class="project-category-link">
                   <a
                     href="https://github.com/moqim-ghizlan/Manifold-Learning---Exploration-Theorique-et-Experimentale"
                     target="_blank"
+                    data-i18n="project_9_link"
                     >GitHub</a
                   >
                 </div>
               </div>
 
               <div class="project-category">
-                <h3>
+                <h3 data-i18n="project_10_title">
                   Exploration en Deep Learning - Concepts Fondamentaux et Études
                   de Cas
                 </h3>
-                <div class="project-category-description">
-                  Ce projet regroupe deux études complémentaires en deep
-                  learning. Le premier explore les concepts fondamentaux à
-                  travers la prédiction des sorties des portes logiques en
-                  utilisant la rétropropagation. Le second est une étude de cas
-                  approfondie mettant en œuvre des modèles avancés pour analyser
-                  et prédire des données réelles, avec une documentation
-                  détaillée des résultats. Ces projets offrent une vision
-                  pratique et théorique des techniques de deep learning.
+                <div
+                  class="project-category-description"
+                  data-i18n="project_10_description"
+                >
+                  Études pratiques en deep learning avec prédiction de portes
+                  logiques et modèles avancés sur données réelles.
                 </div>
                 <div class="project-category-link">
                   <a
                     href="https://github.com/moqim-ghizlan/Exploration-en-Deep-Learning---Concepts-Fondamentaux-et-tudes-de-Cas"
                     target="_blank"
+                    data-i18n="project_10_link"
                     >GitHub</a
                   >
                 </div>
               </div>
 
               <div class="project-category">
-                <h3>Apprentissage Ensembliste - Analyse et Tests de Modèles</h3>
-                <div class="project-category-description">
-                  Ce projet est une implémentation d’analyse et de tests sur des
-                  modèles d’apprentissage ensembliste, utilisant des ensembles
-                  de données variés. Il comprend un rapport détaillé, des
-                  fonctions Python dédiées, un notebook Jupyter pour l'exécution
-                  et un fichier de résultats pré-calculés. Les outils de ce
-                  projet permettent d’expérimenter avec différents ensembles de
-                  données pour explorer les performances des modèles.
+                <h3 data-i18n="project_11_title">
+                  Apprentissage Ensembliste - Analyse et Tests de Modèles
+                </h3>
+                <div
+                  class="project-category-description"
+                  data-i18n="project_11_description"
+                >
+                  Implémentation et tests de modèles d’apprentissage ensembliste
+                  sur divers ensembles de données.
                 </div>
                 <div class="project-category-link">
                   <a
                     href="https://github.com/moqim-ghizlan/Apprentissage-Ensembliste---Analyse-et-Tests-de-Mod-les"
                     target="_blank"
+                    data-i18n="project_11_link"
                     >GitHub</a
                   >
                 </div>
               </div>
 
               <div class="project-category">
-                <h3>
+                <h3 data-i18n="project_12_title">
                   SearchEngine - Moteur de Recherche avec API Reddit et Arxiv
                 </h3>
-                <div class="project-category-description">
-                  SearchEngine est un moteur de recherche développé en Python
-                  qui permet d'interroger les plateformes Reddit et Arxiv en
-                  utilisant leurs API respectives. Ce projet vise à collecter et
-                  analyser des documents selon des mots-clés, avec des résultats
-                  classés et affichés soit dans le terminal soit via une
-                  interface graphique Jupyter Notebook.
+                <div
+                  class="project-category-description"
+                  data-i18n="project_12_description"
+                >
+                  Moteur de recherche Python interrogeant Reddit et Arxiv via
+                  API, affichage des résultats dans terminal ou interface
+                  Jupyter.
                 </div>
                 <div class="project-category-link">
                   <a
                     href="https://github.com/moqim-ghizlan/SearchEngine---Moteur-de-Recherche-avec-API-Reddit-et-Arxiv"
                     target="_blank"
+                    data-i18n="project_12_link"
                     >GitHub</a
                   >
                 </div>
               </div>
 
               <div class="project-category">
-                <h3>Planning Poker - Jeu Collaboratif pour la Gestion Agile</h3>
-                <div class="project-category-description">
+                <h3 data-i18n="project_13_title">
+                  Planning Poker - Jeu Collaboratif pour la Gestion Agile
+                </h3>
+                <div
+                  class="project-category-description"
+                  data-i18n="project_13_description"
+                >
                   Planning Poker est une application web interactive développée
                   avec Django. Elle est conçue pour aider les équipes à estimer
                   les efforts nécessaires à la réalisation de tâches en
@@ -509,14 +633,20 @@
                   <a
                     href="https://github.com/moqim-ghizlan/Planning-Poker---Jeu-Collaboratif-pour-la-Gestion-Agile"
                     target="_blank"
+                    data-i18n="project_13_link"
                     >GitHub</a
                   >
                 </div>
               </div>
 
               <div class="project-category">
-                <h3>E-Com - Plateforme de Commerce Électronique</h3>
-                <div class="project-category-description">
+                <h3 data-i18n="project_14_title">
+                  E-Com - Plateforme de Commerce Électronique
+                </h3>
+                <div
+                  class="project-category-description"
+                  data-i18n="project_14_description"
+                >
                   E-Com est une application web basée sur Django, développée
                   pour gérer un système de commerce électronique. Elle offre des
                   fonctionnalités comme la gestion des articles, des
@@ -527,14 +657,20 @@
                   <a
                     href="https://github.com/moqim-ghizlan/E-Com---Plateforme-de-Commerce-lectronique"
                     target="_blank"
+                    data-i18n="project_14_link"
                     >GitHub</a
                   >
                 </div>
               </div>
 
               <div class="project-category">
-                <h3>Gestion des Stages et Apprentissages</h3>
-                <div class="project-category-description">
+                <h3 data-i18n="project_15_title">
+                  Gestion des Stages et Apprentissages
+                </h3>
+                <div
+                  class="project-category-description"
+                  data-i18n="project_15_description"
+                >
                   Ce projet a été développé dans le cadre du projet tutoré de
                   Licence Professionnelle Métiers de l'Informatique, Conception,
                   Développement et Test de Logiciels, spécialité : Développement
@@ -549,13 +685,20 @@
                   <a
                     href="https://github.com/moqim-ghizlan/Gestion-des-Stages-et-Apprentissages---Plateforme-Web-Intuitive"
                     target="_blank"
+                    data-i18n="project_15_link"
                     >GitHub</a
                   >
                 </div>
               </div>
+
               <div class="project-category">
-                <h3>Django-Codeshare - Plateforme de Partage de Code</h3>
-                <div class="project-category-description">
+                <h3 data-i18n="project_16_title">
+                  Django-Codeshare - Plateforme de Partage de Code
+                </h3>
+                <div
+                  class="project-category-description"
+                  data-i18n="project_16_description"
+                >
                   Django-Codeshare est une application web qui permet de
                   partager, afficher et collaborer sur des fragments de code.
                   Construite avec Django et Django Rest Framework (DRF), cette
@@ -566,13 +709,20 @@
                   <a
                     href="https://github.com/moqim-ghizlan/Codeshare---Plateforme-de-Partage-de-Code"
                     target="_blank"
+                    data-i18n="project_16_link"
                     >GitHub</a
                   >
                 </div>
               </div>
+
               <div class="project-category">
-                <h3>GM-Movies - Gestionnaire de Films et Séries</h3>
-                <div class="project-category-description">
+                <h3 data-i18n="project_17_title">
+                  GM-Movies - Gestionnaire de Films et Séries
+                </h3>
+                <div
+                  class="project-category-description"
+                  data-i18n="project_17_description"
+                >
                   GM-Movies est une application web conçue pour gérer un
                   catalogue de films et séries. Développée avec Flask, elle
                   permet aux utilisateurs d'ajouter des films, des séries et
@@ -583,13 +733,18 @@
                   <a
                     href="https://github.com/moqim-ghizlan/GM-Movies---Gestionnaire-de-Films-et-Series"
                     target="_blank"
+                    data-i18n="project_17_link"
                     >GitHub</a
                   >
                 </div>
               </div>
+
               <div class="project-category">
-                <h3>Docker-Container</h3>
-                <div class="project-category-description">
+                <h3 data-i18n="project_18_title">Docker-Container</h3>
+                <div
+                  class="project-category-description"
+                  data-i18n="project_18_description"
+                >
                   Ce projet illustre l'utilisation de Docker pour construire et
                   utiliser des conteneurs Docker. Il comprend une application
                   web basée sur Django et Docker, permettant aux utilisateurs de
@@ -599,13 +754,20 @@
                   <a
                     href="https://github.com/moqim-ghizlan/Docker-Django---Application-Conteneurisee-avec-Django-et-Docker"
                     target="_blank"
+                    data-i18n="project_18_link"
                     >GitHub</a
                   >
                 </div>
               </div>
+
               <div class="project-category">
-                <h3>TinyAmazon - Application Web de Catalogue de Produits</h3>
-                <div class="project-category-description">
+                <h3 data-i18n="project_19_title">
+                  TinyAmazon - Application Web de Catalogue de Produits
+                </h3>
+                <div
+                  class="project-category-description"
+                  data-i18n="project_19_description"
+                >
                   TinyAmazon est une application web légère développée avec
                   SvelteKit, conçue pour gérer un catalogue de produits. Elle
                   offre une navigation fluide et réactive, avec des
@@ -618,13 +780,20 @@
                   <a
                     href="https://github.com/moqim-ghizlan/TinyAmazon---Application-Web-de-Catalogue-de-Produits"
                     target="_blank"
+                    data-i18n="project_19_link"
                     >GitHub</a
                   >
                 </div>
               </div>
+
               <div class="project-category">
-                <h3>Express-Nunjucks - Application Web Dynamique</h3>
-                <div class="project-category-description">
+                <h3 data-i18n="project_20_title">
+                  Express-Nunjucks - Application Web Dynamique
+                </h3>
+                <div
+                  class="project-category-description"
+                  data-i18n="project_20_description"
+                >
                   Ce projet est une application web dynamique utilisant
                   Express.js pour le backend et Nunjucks/EJS pour le rendu des
                   templates. Il inclut une architecture modulaire pour gérer les
@@ -637,13 +806,20 @@
                   <a
                     href="https://github.com/moqim-ghizlan/Express-Nunjucks---Application-Web-Dynamique"
                     target="_blank"
+                    data-i18n="project_20_link"
                     >GitHub</a
                   >
                 </div>
               </div>
+
               <div class="project-category">
-                <h3>AndroidCars - Gestion des Véhicules</h3>
-                <div class="project-category-description">
+                <h3 data-i18n="project_21_title">
+                  AndroidCars - Gestion des Véhicules
+                </h3>
+                <div
+                  class="project-category-description"
+                  data-i18n="project_21_description"
+                >
                   AndroidCars est une application Android interactive conçue
                   pour permettre aux utilisateurs de gérer un catalogue de
                   véhicules. Elle offre une interface intuitive pour ajouter,
@@ -656,13 +832,20 @@
                   <a
                     href="https://github.com/moqim-ghizlan/AndroidCars---Gestion-des-Vehicules"
                     target="_blank"
+                    data-i18n="project_21_link"
                     >GitHub</a
                   >
                 </div>
               </div>
+
               <div class="project-category">
-                <h3>Agenda en Ligne - Application Flutter Multiplateforme</h3>
-                <div class="project-category-description">
+                <h3 data-i18n="project_22_title">
+                  Agenda en Ligne - Application Flutter Multiplateforme
+                </h3>
+                <div
+                  class="project-category-description"
+                  data-i18n="project_22_description"
+                >
                   Ce projet est une application Flutter conçue pour gérer un
                   agenda numérique en ligne. Il offre aux utilisateurs la
                   possibilité d'organiser leurs tâches, projets, et devoirs,
@@ -673,13 +856,20 @@
                   <a
                     href="https://github.com/moqim-ghizlan/Agenda-en-Ligne---Application-Flutter-Multiplateforme"
                     target="_blank"
+                    data-i18n="project_22_link"
                     >GitHub</a
                   >
                 </div>
               </div>
+
               <div class="project-category">
-                <h3>Facelook - Plateforme Sociale Personnalisée</h3>
-                <div class="project-category-description">
+                <h3 data-i18n="project_23_title">
+                  Facelook - Plateforme Sociale Personnalisée
+                </h3>
+                <div
+                  class="project-category-description"
+                  data-i18n="project_23_description"
+                >
                   Facelook est une application web sociale interactive
                   construite avec Django. Ce projet offre des fonctionnalités
                   comme la gestion des utilisateurs, des publications, des
@@ -692,13 +882,20 @@
                   <a
                     href="https://github.com/moqim-ghizlan/Facelook---Plateforme-Sociale-Personnalisee--clone-de-facebook"
                     target="_blank"
+                    data-i18n="project_23_link"
                     >GitHub</a
                   >
                 </div>
               </div>
+
               <div class="project-category">
-                <h3>GSM-NG - Plateforme de Gestion de Scolarité</h3>
-                <div class="project-category-description">
+                <h3 data-i18n="project_24_title">
+                  GSM-NG - Plateforme de Gestion de Scolarité
+                </h3>
+                <div
+                  class="project-category-description"
+                  data-i18n="project_24_description"
+                >
                   Ce projet est une plateforme de gestion de la scolarité basée
                   sur Django. Initialement développé pour la gestion des stages
                   et des promotions, j'ai repris ce projet pour y apporter des
@@ -710,13 +907,20 @@
                   <a
                     href="https://github.com/moqim-ghizlan/GSM-NG---Plateforme-de-Gestion-de-Scolarite"
                     target="_blank"
+                    data-i18n="project_24_link"
                     >GitHub</a
                   >
                 </div>
               </div>
+
               <div class="project-category">
-                <h3>Gestion de Compte - Application Web Simple et Efficace</h3>
-                <div class="project-category-description">
+                <h3 data-i18n="project_25_title">
+                  Gestion de Compte - Application Web Simple et Efficace
+                </h3>
+                <div
+                  class="project-category-description"
+                  data-i18n="project_25_description"
+                >
                   Ce projet est une application web interactive développée avec
                   HTML, CSS et JavaScript. Elle offre une solution simple pour
                   gérer vos dépenses et visualiser vos données financières.
@@ -728,13 +932,20 @@
                   <a
                     href="https://github.com/moqim-ghizlan/Gestion-de-Compte---Application-Web-Simple-et-Efficace"
                     target="_blank"
+                    data-i18n="project_25_link"
                     >GitHub</a
                   >
                 </div>
               </div>
+
               <div class="project-category">
-                <h3>Gestion du Budget - Application Mobile Intuitive</h3>
-                <div class="project-category-description">
+                <h3 data-i18n="project_26_title">
+                  Gestion du Budget - Application Mobile Intuitive
+                </h3>
+                <div
+                  class="project-category-description"
+                  data-i18n="project_26_description"
+                >
                   Ce projet est une application mobile Android conçue pour
                   simplifier la gestion des budgets personnels et collaboratifs.
                   Grâce à une interface intuitive, les utilisateurs peuvent
@@ -748,6 +959,7 @@
                   <a
                     href="https://github.com/moqim-ghizlan/Gestion-du-Budget---Application-Mobile-Intuitive"
                     target="_blank"
+                    data-i18n="project_26_link"
                     >GitHub</a
                   >
                 </div>
@@ -757,31 +969,34 @@
         </section>
 
         <section id="langues">
-          <h2>Langues</h2>
+          <h2 data-i18n="languages_title">Langues</h2>
           <div class="languages">
             <div class="language-item">
-              <h3>Français</h3>
-              <p>Langue courante</p>
+              <h3 data-i18n="language_1_name">Français</h3>
+              <p data-i18n="language_1_level">Langue courante</p>
             </div>
             <div class="language-item">
-              <h3>Anglais</h3>
-              <p>Niveau professionnel</p>
+              <h3 data-i18n="language_2_name">Anglais</h3>
+              <p data-i18n="language_2_level">Niveau professionnel</p>
             </div>
             <div class="language-item">
-              <h3>Arabe</h3>
-              <p>Langue maternelle</p>
+              <h3 data-i18n="language_3_name">Arabe</h3>
+              <p data-i18n="language_3_level">Langue maternelle</p>
             </div>
           </div>
         </section>
       </div>
 
       <footer>
-        <p>📍 3 Rue Alfred De Musset, 45100 Orléans, France</p>
-        <p style="margin-top: 20px; opacity: 0.8">
+        <p data-i18n="address">
+          📍 3 Rue Alfred De Musset, 45100 Orléans, France
+        </p>
+        <p style="margin-top: 20px; opacity: 0.8" data-i18n="copyright">
           © 2025 Ghizlan Moqim - Tous droits réservés
         </p>
       </footer>
     </div>
   </body>
   <script src="./src/scripts/script.js"></script>
+  <script src="./src/scripts/i18n.js"></script>
 </html>
