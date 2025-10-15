@@ -24,6 +24,7 @@ async function initTranslations() {
     }
 
     // Appliquer la langue
+    console.log(lang)
     changeLanguage(lang);
 
     // Ajouter les écouteurs d'événements aux boutons de langue
