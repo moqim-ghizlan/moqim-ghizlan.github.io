@@ -549,13 +549,13 @@ section {
 }
 
 .project-category h3 {
-    height: 100px;
+    height: 130px;
     width: 100%;
 }
 
 .project-category .project-category-description {
     width: 100%;
-    height: calc(400px - 150px - 50px);
+    height: calc(400px - 175px - 50px);
     overflow-y: auto;
     scrollbar-width: thin;
     scroll-behavior: auto;
