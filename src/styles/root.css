@@ -1,15 +1,37 @@
-@import url('https://fonts.googleapis.com/css?family=Playpen%20Sans%20Deva:700|Playpen%20Sans%20Deva:400');
+/* ===============================
+   FONT & ROOT VARIABLES
+=============================== */
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans+Deva:wght@400;700&display=swap');
 
 :root {
+    /* Colors */
     --text: #060405;
     --background: #fbf8fa;
     --primary: #4e3f48;
     --secondary: #c4afa3;
     --accent: #b5a98b;
+
+    /* Navbar */
     --navbar-bg: rgba(251, 248, 250, 0.85);
     --navbar-bg-scrolled: rgba(251, 248, 250, 0.95);
+
+    /* Layout */
+    --container-width: 1200px;
+    --navbar-height: 80px;
+    --radius: 10px;
+    --radius-lg: 20px;
+
+    /* Shadows / transitions */
+    --shadow-light: 0 2px 10px rgba(0, 0, 0, 0.1);
+    --shadow-medium: 0 5px 15px rgba(158, 102, 136, 0.2);
+    --shadow-strong: 0 20px 60px rgba(0, 0, 0, 0.3);
+    --transition: all 0.3s ease;
+
+    /* Sizing */
+    --profile-size: 350px;
 }
 
+/* Dark theme overrides */
 [data-theme="dark"] {
     --text: #faf5f9;
     --background: #1a1618;
@@ -20,63 +42,27 @@
     --navbar-bg-scrolled: rgba(26, 22, 24, 0.95);
 }
 
+/* ===============================
+   RESET & BASE
+=============================== */
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 html {
     font-size: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 body {
     font-family: 'Playpen Sans Deva', sans-serif;
-    font-weight: 400;
-    line-height: 1.6;
     color: var(--text);
     background: linear-gradient(135deg, var(--secondary) 0%, var(--accent) 100%);
     min-height: 100vh;
-    padding-top: 80px;
-
-}
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-    font-family: 'Playpen Sans Deva', sans-serif;
-    font-weight: 700;
-}
-
-h1 {
-    font-size: 3.366rem;
-    margin-bottom: 10px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-}
-
-h2 {
-    font-size: 2.525rem;
-    color: var(--primary);
-    margin-bottom: 25px;
-    padding-bottom: 10px;
-    border-bottom: 3px solid var(--primary);
-}
-
-h3 {
-    font-size: 1.894rem;
-    margin-bottom: 15px;
-}
-
-h4 {
-    font-size: 1.421rem;
-}
-
-h5 {
-    font-size: 1.066rem;
-}
-
-small {
-    font-size: 0.600rem;
+    padding-top: var(--navbar-height);
+    line-height: 1.6;
+    transition: var(--transition);
 }

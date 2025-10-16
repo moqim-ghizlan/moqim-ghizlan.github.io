@@ -1,79 +1,72 @@
-async function getJson() {
-    const response = await fetch("./src/scripts/data.json");
-    const json = await response.json();
-    return json;
+// --- Load translations from JSON file ---
+async function getTranslations() {
+    try {
+        const res = await fetch("./src/scripts/data.json");
+        if (!res.ok) throw new Error(`HTTP Error ${res.status}`);
+        return await res.json();
+    } catch (error) {
+        console.error("Error loading translations:", error);
+        return {}; // return empty object if loading fails
+    }
 }
 
-let translations = {}; // variable globale
+let translations = {};
+const supportedLangs = ["fr", "en", "ar", "es"];
+const flags = { fr: "🇫🇷", en: "🇬🇧", ar: "🇸🇦", es: "🇪🇸" };
 
-async function initTranslations() {
-    translations = await getJson();
+// --- Main initialization ---
+document.addEventListener("DOMContentLoaded", async () => {
+    translations = await getTranslations();
 
-    // Détecter la langue du navigateur
-    const userLang = navigator.language || navigator.userLanguage; // ex: "fr-FR", "ar-SA"
-    let lang = userLang.slice(0, 2); // garder juste les 2 premières lettres
+    // Detect language (priority: saved > browser > default)
+    const browserLang = (navigator.language || navigator.userLanguage || "en").slice(0, 2);
+    const savedLang = localStorage.getItem("language");
+    const lang = supportedLangs.includes(savedLang)
+        ? savedLang
+        : supportedLangs.includes(browserLang)
+            ? browserLang
+            : "en";
 
-    // Liste des langues supportées
-    const supportedLangs = ["fr", "en", "ar", "es"];
-    if (!supportedLangs.includes(lang)) lang = "fr"; // par défaut si non supportée
+    // Apply language
+    applyLanguage(lang);
 
-    // Vérifier si l’utilisateur a déjà choisi une langue
-    const savedLang = localStorage.getItem('language');
-    if (savedLang && supportedLangs.includes(savedLang)) {
-        lang = savedLang;
+    // Add click listeners to language buttons
+    document.querySelectorAll(".lang-btn").forEach(btn =>
+        btn.addEventListener("click", () => applyLanguage(btn.dataset.lang))
+    );
+});
+
+// --- Apply selected language ---
+function applyLanguage(lang) {
+    if (!translations[lang]) {
+        console.warn(`Language "${lang}" not found in data.json`);
+        return;
     }
 
-    // Appliquer la langue
-    console.log(lang)
-    changeLanguage(lang);
+    // Save chosen language
+    localStorage.setItem("language", lang);
 
-    // Ajouter les écouteurs d'événements aux boutons de langue
-    document.querySelectorAll('.lang-btn').forEach(btn => {
-        btn.addEventListener('click', function () {
-            const lang = this.getAttribute('data-lang');
-            changeLanguage(lang);
-        });
-    });
-}
-
-// Fonction pour changer la langue
-function changeLanguage(lang) {
-    if (!translations[lang]) return; // sécurité si la langue n’existe pas
-
-    // Sauvegarder la langue choisie
-    localStorage.setItem('language', lang);
-
-    // Mettre à jour tous les éléments avec data-i18n
-    document.querySelectorAll('[data-i18n]').forEach(element => {
-        const key = element.getAttribute('data-i18n');
-        if (translations[lang][key]) {
-            element.textContent = translations[lang][key];
-        }
+    // Update all translatable elements
+    document.querySelectorAll("[data-i18n]").forEach(el => {
+        const key = el.dataset.i18n;
+        if (translations[lang][key]) el.textContent = translations[lang][key];
     });
 
-    // Gérer la direction du texte
-    if (lang === 'ar') {
-        document.documentElement.setAttribute('dir', 'rtl');
-        document.documentElement.setAttribute('lang', 'ar');
-    } else {
-        document.documentElement.setAttribute('dir', 'ltr');
-        document.documentElement.setAttribute('lang', lang);
-    }
+    // Set document direction (RTL for Arabic)
+    const isArabic = lang === "ar";
+    document.documentElement.lang = lang;
+    document.documentElement.dir = isArabic ? "rtl" : "ltr";
 
-    // Mettre à jour les boutons de langue actifs
-    document.querySelectorAll('.lang-btn').forEach(btn => {
-        btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
-    });
+    // Update active state of language buttons
+    document.querySelectorAll(".lang-btn").forEach(btn =>
+        btn.classList.toggle("active", btn.dataset.lang === lang)
+    );
 
-    // Mettre à jour le sélecteur de langue si tu as des flags
-    const flags = { fr: "🇫🇷", en: "🇬🇧", ar: "🇸🇦", es: "🇪🇸" };
+    // Update flag and language code display
     const currentFlag = document.getElementById("current-lang-flag");
     const currentCode = document.getElementById("current-lang-code");
     if (currentFlag && currentCode) {
-        currentFlag.textContent = flags[lang];
+        currentFlag.textContent = flags[lang] || "🏳️";
         currentCode.textContent = lang.toUpperCase();
     }
 }
-
-// Initialisation une fois le DOM chargé
-document.addEventListener('DOMContentLoaded', initTranslations);

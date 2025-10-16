@@ -2,7 +2,7 @@
     "fr": {
         "title": "Ghizlan Moqim - Développeur Full-Stack",
         "profile_title": "Ghizlan Moqim - Développeur Full-Stack",
-        "profile_tagline": "Développeur web passionné, je conçois des applications modernes et performantes en front-end et back-end. Fort de plusieurs expériences sur des projets complets, j'aime créer des solutions claires, efficaces et évolutives.",
+        "profile_tagline": "Développeur web passionné, je conçois et développe des applications modernes, performantes et adaptées aux besoins des utilisateurs. Grâce à mes expériences sur des projets complets, j’ai acquis une solide maîtrise du développement front-end (interfaces réactives, ergonomiques et accessibles) et back-end (architectures robustes, APIs sécurisées, bases de données optimisées). J’accorde une grande importance à la qualité du code, à la performance et à la scalabilité des solutions que je conçois. J’aime transformer une idée en un produit fonctionnel, clair et évolutif, en utilisant des technologies actuelles comme JavaScript/TypeScript, React, Vue.js, Angular Node.js, Java, Python ou Django selon les besoins du projet. Curieux et rigoureux, j’apprécie le travail en équipe, la collaboration avec des profils variés (designers, data scientists, chefs de projet), et je veille toujours à faire évoluer mes compétences pour proposer des solutions innovantes et durables.",
         "nav_experience": "Expérience",
         "nav_formation": "Formation",
         "nav_competences": "Compétences",
@@ -170,7 +170,7 @@
     "en": {
         "title": "Ghizlan Moqim - Full-Stack Developer",
         "profile_title": "Ghizlan Moqim - Full-Stack Developer",
-        "profile_tagline": "Passionate web developer, I design modern and high-performance front-end and back-end applications. With experience on complete projects, I enjoy creating clear, efficient, and scalable solutions.",
+        "profile_tagline": "Desarrollador web apasionado, diseño y desarrollo aplicaciones modernas, eficientes y adaptadas a las necesidades de los usuarios. Gracias a mis experiencias en proyectos completos, he adquirido una sólida competencia en desarrollo front-end (interfaces reactivas, ergonómicas y accesibles) y back-end (arquitecturas robustas, APIs seguras y bases de datos optimizadas). Doy mucha importancia a la calidad del código, al rendimiento y a la escalabilidad de las soluciones que diseño. Me gusta transformar una idea en un producto funcional, claro y evolutivo, utilizando tecnologías actuales como JavaScript/TypeScript, React, Vue.js, Angular Node.js, Java, Python o Django, según las necesidades del proyecto. Soy una persona curiosa y rigurosa, me gusta trabajar en equipo y colaborar con diferentes perfiles (diseñadores, científicos de datos, jefes de proyecto), y siempre busco mejorar mis habilidades para ofrecer soluciones innovadoras y sostenibles.",
         "nav_experience": "Experience",
         "nav_formation": "Education",
         "nav_competences": "Skills",
@@ -338,7 +338,7 @@
     "ar": {
         "title": "غزلان مقيم - مطور Full-Stack",
         "profile_title": "غزلان مقيم - مطور Full-Stack",
-        "profile_tagline": "مطور ويب شغوف، أصمم تطبيقات حديثة وعالية الأداء للواجهات الأمامية والخلفية. وبفضل خبرتي في مشاريع متكاملة، أحب إنشاء حلول واضحة وفعالة وقابلة للتطوير.",
+        "profile_tagline": "مطور ويب شغوف، بحب صمّم وطبّق تطبيقات حديثة وسريعة بتلبّي احتياجات المستخدمين. من خلال خبرتي بعدّة مشاريع كاملة، اكتسبت مهارة قوية بتطوير الـfront-end (واجهات تفاعلية وسهلة الاستخدام) وبنفس الوقت بالـback-end (بُنى قوية، واجهات برمجة آمنة، وقواعد بيانات محسّنة). بهتم كتير بجودة الكود، والأداء، وقابلية التوسّع بالتطبيقات اللي بشتغل عليها. بحب حوّل أي فكرة لمنتج واضح، عملي، وقابل للتطوير، وبستخدم تقنيات حديثة مثل JavaScript/TypeScript, React, Vue.js, Angular Node.js, Java, Python، وDjango حسب متطلبات المشروع. أنا شخص فضولي ودقيق، وبحب الشغل ضمن فريق ومع ناس من اختصاصات مختلفة (مصممين، مختصين بالذكاء الاصطناعي، مدراء مشاريع)، وبسعى دايمًا طوّر حالي وقدّم حلول مبتكرة ومستدامة.",
         "nav_experience": "الخبرة",
         "nav_formation": "التعليم",
         "nav_competences": "المهارات",
@@ -506,7 +506,7 @@
     "es": {
         "title": "Ghizlan Moqim - Desarrollador Full-Stack",
         "profile_title": "Ghizlan Moqim - Desarrollador Full-Stack",
-        "profile_tagline": "Desarrollador web apasionado, diseño aplicaciones modernas y de alto rendimiento tanto en front-end como en back-end. Con experiencia en proyectos completos, disfruto creando soluciones claras, eficientes y escalables.",
+        "profile_tagline": "Desarrollador web apasionado, diseño y desarrollo aplicaciones modernas, eficientes y adaptadas a las necesidades de los usuarios. Gracias a mis experiencias en proyectos completos, he adquirido una sólida competencia en desarrollo front-end (interfaces reactivas, ergonómicas y accesibles) y back-end (arquitecturas robustas, APIs seguras y bases de datos optimizadas). Doy mucha importancia a la calidad del código, al rendimiento y a la escalabilidad de las soluciones que diseño. Me gusta transformar una idea en un producto funcional, claro y evolutivo, utilizando tecnologías actuales como JavaScript/TypeScript, React, Vue.js, Angular Node.js, Java, Python o Django, según las necesidades del proyecto. Soy una persona curiosa y rigurosa, me gusta trabajar en equipo y colaborar con diferentes perfiles (diseñadores, científicos de datos, jefes de proyecto), y siempre busco mejorar mis habilidades para ofrecer soluciones innovadoras y sostenibles.",
         "nav_experience": "Experiencia",
         "nav_formation": "Formación",
         "nav_competences": "Habilidades",
