@@ -55,7 +55,7 @@
 .navbar-menu {
     display: flex;
     list-style: none;
-    gap: 30px;
+    gap: 20px;
     align-items: center;
     margin: 0;
     padding: 0;
