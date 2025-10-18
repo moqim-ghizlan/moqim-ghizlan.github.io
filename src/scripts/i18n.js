@@ -11,8 +11,8 @@ async function getTranslations() {
 }
 
 let translations = {};
-const supportedLangs = ["fr", "en", "ar", "es"];
-const flags = { fr: "🇫🇷", en: "🇬🇧", ar: "🇸🇦", es: "🇪🇸" };
+const supportedLangs = ["fr", "en", "ar", "es", "de"];
+const flags = { fr: "🇫🇷", en: "🇬🇧", ar: "🇸🇦", es: "🇪🇸", de: "🇩🇪" };
 
 // --- Main initialization ---
 document.addEventListener("DOMContentLoaded", async () => {
