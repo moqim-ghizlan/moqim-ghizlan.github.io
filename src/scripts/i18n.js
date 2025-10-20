@@ -58,7 +58,7 @@ function applyLanguage(lang) {
     document.documentElement.dir = isArabic ? "rtl" : "ltr";
 
     // Update active state of language buttons
-    document.querySelectorAll(".lang-btn").forEach(btn =>
+    document.querySelectorAll(".lang-option").forEach(btn =>
         btn.classList.toggle("active", btn.dataset.lang === lang)
     );
 

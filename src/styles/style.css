@@ -428,7 +428,7 @@ section {
 }
 
 .job-title {
-    font-size: 1.3em;
+    font-size: 1em;
     font-weight: bold;
     color: var(--primary);
     margin-bottom: 5px;
@@ -445,6 +445,45 @@ section {
     font-style: italic;
     margin-bottom: 10px;
 }
+
+#experience h2,
+#formation h2,
+#competences h2,
+#projets h2,
+#langues h2
+{
+    margin-bottom: 30px;
+}
+/* --- Description courte de l'expérience --- */
+.experience-description-summary {
+    margin-bottom: 15px;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--text);
+    background-color: var(--background);
+    padding: 12px 15px;
+    border-left: 3px solid var(--primary);
+    border-radius: calc(var(--radius) - 2px);
+}
+
+/* --- Bloc des technologies / compétences --- */
+.experience-tech-stack {
+    margin-top: 10px;
+    font-size: 0.95rem;
+    color: var(--fbf8fa);
+    background-color: var(--background);
+    padding: 10px 15px;
+    border-radius: var(--radius);
+    border-left: 3px solid var(--primary);
+}
+
+.experience-tech-stack p {
+    font-weight: bold;
+    color: var(--fbf8fa);
+    margin-bottom: 4px;
+    font-size: 1rem;
+}
+
 
 /* ===============================
    SKILLS & PROJECTS SLIDERS / GRIDS
